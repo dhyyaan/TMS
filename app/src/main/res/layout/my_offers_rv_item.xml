@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<FrameLayout
+    android:background="#28C4AE"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="130dp"
+    android:id="@+id/frameLayout2"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <TextView
+        android:id="@+id/tvPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20%"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="14dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tvOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"/>
+</FrameLayout>
+<LinearLayout
+
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center"
+        android:id="@+id/tvMimPurchage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp"
+        android:textColor="#0A0A0A"
+        android:text="On minimum puchage of $ 250" />
+
+
+<LinearLayout
+    android:layout_marginTop="4dp"
+    android:layout_gravity="center"
+    android:layout_below="@+id/tvMimPurchage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+
+        android:id="@+id/tvLCode"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMimPurchage"
+        android:textSize="16sp"
+        android:textColor="#0A0A0A"
+        android:text="Code:" />
+    <TextView
+        android:layout_gravity="end"
+        android:id="@+id/tvCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvLCode"
+        android:layout_toEndOf="@+id/tvLCode"
+        android:layout_toRightOf="@+id/tvLCode"
+        android:textSize="16sp"
+        android:textColor="#0A0A0A"
+        android:text="SUPER20XHS" />
+</LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+         android:layout_marginStart="12dp"
+        android:id="@+id/tvTexesExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLCode"
+        android:textSize="12sp"
+        android:textColor="#28C4AE"
+        android:text="*Taxes Extra" />
+    <View
+        android:background="#F6F6F6"
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+            android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/tvMimPurchage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvLExpiry"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#FC7166"
+            android:text="Expiry:" />
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_gravity="end"
+            android:id="@+id/tvExpiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FC7166"
+            android:text="Oct 05, 2017" />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+        </android.support.v7.widget.CardView>

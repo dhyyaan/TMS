@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:padding="8dp">
+
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    android:elevation="4dp"
+    app:cardCornerRadius="0dp">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvChooseCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#272727"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="Choose Country" />
+    <LinearLayout
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textStyle="normal"
+            android:textSize="12sp"
+
+           android:elevation="14dp"
+            android:layout_weight="1"
+            android:id="@+id/btnChooseCountry1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:textStyle="normal"
+            android:textSize="12sp"
+
+            android:elevation="14dp"
+            android:layout_weight="1"
+            android:id="@+id/btnChooseCountry2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:id="@+id/btnSearch"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:background="@drawable/round_rectangleapp"
+        >
+
+        <com.takemysaree.fonts.LatoBoldTextview
+            android:layout_width="wrap_content"
+            android:text="Search"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+         android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textColor="@color/whitecolor"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
+</android.support.v7.widget.CardView>
+</FrameLayout>

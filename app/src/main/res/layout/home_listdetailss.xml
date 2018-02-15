@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+       >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:id="@+id/tabclick"
+            android:layout_height="180dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="8dp"
+                android:id="@+id/ll1"
+                android:visibility="gone"
+                android:layout_height="89.5dp">
+
+                <ImageView
+                    android:id="@+id/ig4"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="89.5dp"
+                android:layout_marginTop="1dp"
+                android:id="@+id/ll2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ig1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"></View>
+
+                <ImageView
+                    android:id="@+id/ig2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/vse"
+                android:layout_height="1dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="8dp"
+                android:id="@+id/ll3"
+                android:layout_height="89.5dp">
+
+                <ImageView
+                    android:id="@+id/ig3"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/ig31"
+android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+    </FrameLayout>

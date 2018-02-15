@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TakeMySari</string>
+    <string-array name="titles">
+        <item>My Orders</item>
+        <item>Settings</item>
+        <item>My Reviews</item>
+        <item>Talk To Us</item>
+        <item>My Offers</item>
+        <item>Invite Your Friends</item>
+        <item>FAQ</item>
+        <item>Logout</item>
+
+    </string-array>
+    <string name="title">SELLING A SINGLE PIECE?\nex. Whole Pajami Suit</string>
+    <string name="title1">SELLING PIECES INDIVIDUALLY?\nex. Kameez, Pajami, Dupatta</string>
+    <string name="pleasewait">Please Wait...</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="facebook_app_id">771855549682601</string>
+</resources>

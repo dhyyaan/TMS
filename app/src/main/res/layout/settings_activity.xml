@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+<RelativeLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingLeft="12dp"
+    android:paddingStart="12dp"
+
+    android:id="@+id/llBack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#28C4AE">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back_arrow" />
+</FrameLayout>
+    <FrameLayout
+        android:layout_below="@+id/llBack"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#28C4AE"
+        android:id="@+id/frameLayout">
+        <com.takemysaree.models.CircleImageview
+            android:id="@+id/ivProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/sari1"
+            android:layout_gravity="center"
+
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:alpha="1"
+            />
+
+        <TextView
+            android:id="@+id/tvChangePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frameLayout"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="12dp"
+            android:text="Change photo" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvLName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:textColor="#0B0B0B"
+        android:textSize="16sp"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:inputType="textPersonName"
+        android:focusableInTouchMode="false"
+        android:text="Amanda David"
+        android:layout_alignBaseline="@+id/tvLName"
+        android:layout_alignBottom="@+id/tvLName"
+        android:layout_toRightOf="@+id/tvLName"
+        android:layout_toEndOf="@+id/tvLName"
+        android:textSize="16sp"
+        android:layout_alignLeft="@+id/etUserName"
+        android:layout_alignStart="@+id/etUserName" />
+    <TextView
+        android:id="@+id/tvLUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvLName"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:textColor="#0B0B0B"
+        android:textSize="16sp"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Amanda David"
+        android:textSize="16sp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_alignBaseline="@+id/tvLUserName"
+        android:layout_toRightOf="@+id/tvLUserName"
+        android:layout_toEndOf="@+id/tvLUserName"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+    <TextView
+        android:id="@+id/tvLEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvLUserName"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:textColor="#0B0B0B"
+        android:textSize="16sp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="amanda19gmail.com"
+        android:textSize="16sp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_alignBaseline="@+id/tvLEmail"
+        android:layout_toRightOf="@+id/tvLEmail"
+        android:layout_toEndOf="@+id/tvLEmail"
+        android:layout_alignLeft="@+id/etUserName"
+        android:layout_alignStart="@+id/etUserName" />
+    <TextView
+        android:id="@+id/tvLPhoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvLEmail"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:textColor="#0B0B0B"
+        android:textSize="16sp"
+        android:text="Phone" />
+
+    <EditText
+        android:id="@+id/etPhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="+705679899887"
+        android:textSize="16sp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_alignBaseline="@+id/tvLPhoneNo"
+        android:layout_toRightOf="@+id/tvLPhoneNo"
+        android:layout_toEndOf="@+id/tvLPhoneNo"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail" />
+    <TextView
+        android:id="@+id/tvLAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvLPhoneNo"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:textColor="#0B0B0B"
+        android:textSize="16sp"
+        android:text="Address" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:maxLines="5"
+        android:text="Yeltown,British Columbia, Canada"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/tvLAddress"
+        android:layout_toEndOf="@+id/tvLAddress"
+        android:layout_toRightOf="@+id/tvLAddress"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignLeft="@+id/etPhoneNo"
+        android:layout_alignStart="@+id/etPhoneNo" />
+    <TextView
+        android:id="@+id/tvLBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvLAddress"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:textColor="#0B0B0B"
+        android:textSize="16sp"
+        android:text="Bio" />
+
+    <EditText
+        android:id="@+id/etBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_below="@+id/tvLBio"
+        android:layout_alignLeft="@+id/etAddress"
+        android:layout_alignStart="@+id/etAddress" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+       android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:layout_below="@+id/etBio"
+        android:id="@+id/login"
+        android:background="@drawable/round_rectangleapp"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.takemysaree.fonts.LatoBoldTextview
+            android:layout_width="wrap_content"
+            android:text="Save"
+            android:padding="10dp"
+
+            android:textColor="@color/whitecolor"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- android:layout_below="@+id/btnSave"-->
+
+       <View
+           android:id="@+id/view1"
+           android:layout_below="@+id/login"
+
+           android:background="#0B0B0B"
+           android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_below="@+id/view1"
+        android:id="@+id/llFbInvite"
+        android:padding="8dp"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <ImageView
+            android:id="@+id/ivFb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            />
+        <TextView
+            android:id="@+id/tvLFbInvite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_weight="1"
+            android:textColor="#0B0B0B"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:text="Invite Facebook Friends" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_gravity="right|end"
+            app:srcCompat="@drawable/forword_arrow" />
+
+    </LinearLayout>
+        <View
+            android:layout_marginTop="1dp"
+            android:id="@+id/view2"
+            android:layout_below="@+id/llFbInvite"
+            android:background="#0B0B0B"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+
+        android:layout_below="@+id/view2"
+
+        android:layout_height="?attr/actionBarSize">
+
+        <com.takemysaree.fonts.LatoBoldTextview
+            android:layout_width="wrap_content"
+            android:text="Delete Account"
+            android:padding="10dp"
+
+            android:textColor="@color/appcolor"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

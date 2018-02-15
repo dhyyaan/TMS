@@ -1,0 +1,84 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:id="@+id/toolbars"
+
+        android:orientation="horizontal"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:id="@+id/ivHamburger"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/back_arrow" />
+        <com.takemysaree.fonts.LatoBoldTextview
+            android:layout_width="wrap_content"
+            android:text="Offers"
+            android:id="@+id/title"
+            android:textSize="18sp"
+            android:textColor="@color/whitecolor"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            />
+
+
+    </LinearLayout>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbars"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:tabPaddingBottom="1dp"
+          android:background="#fff"
+            app:tabPaddingEnd="1dp"
+            app:tabPaddingStart="-1dp"
+            app:tabPaddingTop="-1dp"
+            app:tabIndicatorHeight="4dp"
+
+            android:clickable="false"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabTextColor="#fff"
+            app:tabSelectedTextColor="#000"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.takemysaree.models.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbars"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/postproduct"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.takemysaree.fonts.LatoBoldTextview
+        android:id="@+id/postproduct"
+android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="POST"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"
+
+        />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

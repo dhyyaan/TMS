@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:elevation="40dp"
+
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent">
+
+
+<ImageView
+    android:layout_width="45dp"
+    android:src="@drawable/close_gray"
+    android:id="@+id/imageclose"
+    android:layout_marginTop="5dp"
+    android:padding="10dp"
+    android:layout_height="45dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/imageclose"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.think360.tms.DetailActivity">
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <com.takemysaree.models.AutoScrollViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/sari1" />
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator_default"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="105dp"
+
+                    android:layout_gravity="bottom"
+                    app:ci_animator="@animator/indicator_animator"
+                    app:ci_animator_reverse="@animator/indicator_animator_reverse"
+                    app:ci_drawable="@drawable/ubselected_dots"
+                    app:ci_height="10dp"
+                    app:ci_width="@dimen/activity_horizontal_margin"
+                    app:ci_drawable_unselected="@drawable/circle"
+                    />
+
+
+            </FrameLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

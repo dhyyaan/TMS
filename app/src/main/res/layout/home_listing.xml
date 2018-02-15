@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/grid_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:numColumns="2"
+           android:verticalSpacing="8dp"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            >
+
+        </GridView>
+
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:layout_width="match_parent"
+        android:text="No Product Found"
+        android:gravity="center"
+        android:id="@+id/nodata"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

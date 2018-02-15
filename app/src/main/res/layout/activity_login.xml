@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        />
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:id="@+id/ivLogo"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+     android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/logo" />
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#E3E3E3"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"/>
+        <com.takemysaree.fonts.LatoRegularTextview
+            android:textSize="14sp"
+            android:textColor="@color/colorActionBar"
+            android:id="@+id/tvConnectWith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quickly Connect With" />
+    <View
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#E3E3E3"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"/>
+</LinearLayout>
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:id="@+id/btnContinueWithFb"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/fbs"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/round_rectangleappsfldfb"
+        android:text="Continue with Facebook"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_below="@+id/etBio"
+        />
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:id="@+id/btnContinueWithGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/round_rectangleappsfldg"
+        android:text="Continue with Google"
+        android:gravity="center"
+        android:drawablePadding="8dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/gs"
+        android:textAllCaps="false"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_below="@+id/etBio"
+
+
+       />
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#E3E3E3"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"/>
+        <com.takemysaree.fonts.LatoRegularTextview
+            android:textColor="@color/colorActionBar"
+            android:id="@+id/tvOrUseYourEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or Use Your Email" />
+        <View
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#E3E3E3"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:id="@+id/btnContinueWithEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Continue with Email"
+        android:background="@drawable/round_rectangleappsfld"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_below="@+id/etBio"
+      />
+
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:layout_marginTop="16dp"
+        android:id="@+id/tvSingingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:text="By signing up or logging in, you agree our"
+        android:textColor="@color/colorActionBar" />
+
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorActionBar"
+        android:id="@+id/tvTAndC"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Terms &amp; Conditions and Privacy Policy" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_below="@+id/llBack"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#28C4AE"
+        android:id="@+id/frameLayout">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/back_arrow" />
+        <ImageView
+
+            android:id="@+id/ivProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/intro"
+            android:layout_gravity="center"
+
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:alpha="1"
+            />
+
+    </FrameLayout>
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:id="@+id/tvContactTmsDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:textColor="#1A1A1A"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:text="If you have any Question about app please write down in below box" />
+
+    <TextView
+        android:id="@+id/tvLEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="Message"
+        android:textColor="#C5C5C6"
+        android:textSize="16sp" />
+
+    <com.takemysaree.fonts.LatoNormalEditText
+        android:id="@+id/etAskAQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingLeft="24sp"
+        android:paddingStart="24sp"
+        android:hint="Enter your message here..."
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+      />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:layout_below="@+id/etBio"
+        android:id="@+id/login"
+        android:background="@drawable/round_rectangleapp"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.takemysaree.fonts.LatoBoldTextview
+            android:layout_width="wrap_content"
+            android:text="Send"
+            android:padding="10dp"
+
+            android:textColor="@color/whitecolor"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

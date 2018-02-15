@@ -1,0 +1,8 @@
+<com.takemysaree.fonts.LatoRegularTextview xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:textColor="#A8A8A8"
+    android:textSize="8sp"
+    />

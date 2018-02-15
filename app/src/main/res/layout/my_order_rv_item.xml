@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSariTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#151515"
+        android:textSize="16sp"
+        android:text="Silk Sari with Banarasi Work" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvSariTitle"
+        app:srcCompat="@drawable/sari1" />
+
+    <TextView
+        android:id="@+id/tvLOrderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#151515"
+        android:textSize="14sp"
+        android:text="Order id:"
+        android:layout_marginTop="8dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvOrderId"
+        android:textColor="#151515"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLOrderid"
+        android:layout_toEndOf="@+id/tvLOrderid"
+        android:layout_toRightOf="@+id/tvLOrderid"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:text=" 4077569(20-9-2017)" />
+
+    <TextView
+        android:id="@+id/tvLSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLOrderid"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="#262626"
+        android:textSize="14sp"
+        android:text="Size:" />
+
+    <TextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLSize"
+        android:layout_toEndOf="@+id/tvLSize"
+        android:layout_toRightOf="@+id/tvLSize"
+        android:textSize="14sp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:textColor="#56CFBE"
+        android:text="44" />
+
+    <TextView
+        android:id="@+id/tvLQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvSize"
+        android:layout_toEndOf="@+id/tvSize"
+        android:layout_toRightOf="@+id/tvSize"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="#262626"
+        android:textSize="14sp"
+        android:text="Qty:" />
+
+    <TextView
+        android:id="@+id/tvQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLQty"
+        android:layout_toEndOf="@+id/tvLQty"
+        android:layout_toRightOf="@+id/tvLQty"
+        android:textSize="14sp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:textColor="#56CFBE"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/tvLPaymentMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLSize"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="#262626"
+        android:textSize="14sp"
+        android:text="Payment Mode:" />
+
+    <TextView
+        android:id="@+id/tvOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLPaymentMode"
+        android:layout_toEndOf="@+id/tvLPaymentMode"
+        android:layout_toRightOf="@+id/tvLPaymentMode"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:textColor="#151515"
+        android:text="Online" />
+
+    <TextView
+        android:id="@+id/tvLPamentAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLPaymentMode"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="#262626"
+        android:textSize="14sp"
+        android:text="Payment Amount:" />
+
+    <TextView
+        android:id="@+id/tvPaymentAmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLPamentAmt"
+        android:layout_toEndOf="@+id/tvLPamentAmt"
+        android:layout_toRightOf="@+id/tvLPamentAmt"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:textColor="#151515"
+        android:text="$300" />
+
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>

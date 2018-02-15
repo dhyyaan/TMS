@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:id="@+id/relclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="3sp">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal|top" />
+
+        <ImageView
+            android:id="@+id/sold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:src="@drawable/sold" />
+
+        <ImageView
+            android:id="@+id/rented"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:src="@drawable/rented"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="8dp"
+            android:paddingRight="8dp"
+android:layout_alignParentRight="true"
+            android:elevation="15dp"
+            android:src="@drawable/close"
+            android:visibility="visible" />
+
+        <com.takemysaree.fonts.LatoRegularTextview
+            android:layout_width="wrap_content"
+            android:id="@+id/name"
+            android:layout_marginTop="2dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/imageview1"
+            android:layout_height="wrap_content" />
+        <com.takemysaree.fonts.LatoBoldTextview
+            android:layout_width="wrap_content"
+            android:id="@+id/price"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/name"
+            android:layout_height="wrap_content" />
+        <com.takemysaree.fonts.LatoRegularTextview
+            android:layout_width="wrap_content"
+            android:id="@+id/cartmove"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dp"
+            android:text="Move to Cart"
+            android:layout_below="@+id/price"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal|top"
+            android:alpha=".1"
+            android:background="@drawable/round_rectangleblack" />
+
+
+    </RelativeLayout>
+</FrameLayout>
+

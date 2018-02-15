@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/close_gray"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/imagevs"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:layout_height="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginRight="30dp"
+
+        android:layout_marginLeft="30dp"
+
+        android:id="@+id/relus"
+        android:background="@drawable/round_rectangleappsfld"
+        >
+
+
+
+
+
+        <com.takemysaree.fonts.LatoExtraBoldTextview
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:layout_centerInParent="true"
+
+            android:gravity="center"
+            android:text="UNITED STATES ONLY"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginRight="30dp"
+
+            android:layout_marginLeft="30dp"
+
+            android:id="@+id/relcanada"
+            android:background="@drawable/round_rectangleapps"
+            >
+
+
+
+
+
+            <com.takemysaree.fonts.LatoExtraBoldTextview
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:layout_centerInParent="true"
+
+                android:gravity="center"
+                android:text="CANADA ONLY"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#343434" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+android:id="@+id/relboth"
+            android:background="@drawable/round_rectangleapps"
+            >
+
+
+
+
+
+            <com.takemysaree.fonts.LatoExtraBoldTextview
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:layout_centerInParent="true"
+
+                android:gravity="center"
+                android:text="UNITED STATES &amp; CANADA"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#343434" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

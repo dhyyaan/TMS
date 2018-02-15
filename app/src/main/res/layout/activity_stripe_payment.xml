@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent">
+
+
+
+            <ImageView
+                android:id="@+id/ivBackArrow"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:src="@drawable/back_arrow" />
+
+
+        <com.takemysaree.fonts.LatoBoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Payment"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fc7c71">
+
+
+
+
+
+
+        <com.takemysaree.fonts.LatoBoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="8dp"
+            android:text="Pay amount"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white" />
+        <com.takemysaree.fonts.LatoBoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+android:id="@+id/amnt"
+            android:layout_alignParentRight="true"
+            android:paddingRight="8dp"
+
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_rectanglebordertab"
+                android:focusableInTouchMode="true"
+                android:hint="Enter Card Number"
+                app:hintAnimationEnabled="true">
+
+                <com.stripe.android.view.CardNumberEditText
+                    android:id="@+id/et_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:accessibilityTraversalBefore="@+id/et_expiry_date"
+
+                    android:drawablePadding="8dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="numberDecimal"
+                    android:maxLength="19"
+                    android:nextFocusDown="@+id/et_expiry_date"
+                    android:nextFocusForward="@+id/et_expiry_date"
+                    android:nextFocusRight="@+id/et_expiry_date"
+                    android:paddingLeft="10dp"
+                    android:visibility="visible"
+                    app:paddingStart="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_rectanglebordertab"
+                android:hint="@string/expiry_date_hint"
+                android:visibility="visible"
+                app:hintAnimationEnabled="true">
+
+                <com.stripe.android.view.ExpiryDateEditText
+                    android:id="@+id/et_expiry_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:accessibilityTraversalAfter="@+id/et_expiry_date"
+                    android:accessibilityTraversalBefore="@id/et_card_number"
+
+                    android:drawablePadding="8dp"
+
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="date"
+                    android:maxLength="5"
+                    android:nextFocusDown="@+id/et_cvc_number"
+                    android:nextFocusForward="@+id/et_cvc_number"
+                    android:nextFocusLeft="@id/et_card_number"
+                    android:nextFocusRight="@+id/et_cvc_number"
+                    android:nextFocusUp="@id/et_card_number"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:visibility="visible"
+                    tools:ignore="UnusedAttribute"
+                    tools:importantForAccessibility="yes" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/round_rectanglebordertab"
+                android:layout_marginTop="20dp"
+                android:hint="@string/cvc_number_hint"
+                app:hintAnimationEnabled="true">
+
+                <com.stripe.android.view.StripeEditText
+                    android:id="@+id/et_cvc_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:accessibilityTraversalAfter="@+id/et_expiry_date"
+
+                    android:drawablePadding="8dp"
+
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:nextFocusLeft="@id/et_expiry_date"
+                    android:nextFocusUp="@id/et_expiry_date"
+                    tools:ignore="UnusedAttribute"
+                    tools:importantForAccessibility="yes" />
+
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:id="@+id/buylyt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/round_rectangleappsfld"
+                android:gravity="center">
+
+                <com.takemysaree.fonts.LatoBoldTextview
+                    android:id="@+id/buytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Pay"
+                    android:textColor="@color/whitecolor" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

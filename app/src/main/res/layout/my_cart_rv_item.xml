@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    android:elevation="4dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:paddingTop="12dp"
+
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="35dp"
+    android:padding="8dp"
+    android:id="@+id/iv_close"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/close_gray"
+    android:layout_height="35dp" />
+    <TextView
+        android:id="@+id/tvSariTitle"
+        android:layout_below="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#151515"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:text="Silk Sari with Banarasi Work" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvSariTitle"
+        app:srcCompat="@drawable/n1" />
+
+    <com.takemysaree.fonts.LatoBoldTextview
+        android:id="@+id/tvLOrderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#151515"
+        android:textSize="14sp"
+        android:text="Silk Satin Printed Stole"
+        android:layout_marginTop="8dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:id="@+id/tvLOrderids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c6c5c5"
+        android:textSize="14sp"
+
+        android:text="Sold By: Bluementor"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@+id/tvLOrderid"
+        android:layout_marginStart="8dp"
+       />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/tvLOrderids"
+    android:layout_toEndOf="@+id/imageView"
+    android:layout_toRightOf="@+id/imageView"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginStart="8dp"
+    android:id="@+id/klkl"
+    android:layout_height="wrap_content">
+
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:id="@+id/tvLSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:visibility="gone"
+
+        android:textColor="#262626"
+        android:textSize="14sp"
+        android:text="Size:" />
+
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLSize"
+        android:layout_toEndOf="@+id/tvLSize"
+        android:layout_toRightOf="@+id/tvLSize"
+        android:textSize="14sp"
+        android:visibility="gone"
+android:layout_marginRight="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:textColor="#56CFBE"
+        android:text="44" />
+
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:id="@+id/tvLQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvSize"
+        android:layout_toEndOf="@+id/tvSize"
+        android:layout_toRightOf="@+id/tvSize"
+
+        android:textColor="#262626"
+        android:textSize="14sp"
+        android:text="Qty:" />
+
+    <com.takemysaree.fonts.LatoRegularTextview
+        android:id="@+id/tvQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLQty"
+        android:layout_toEndOf="@+id/tvLQty"
+        android:layout_toRightOf="@+id/tvLQty"
+        android:textSize="14sp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:textColor="#56CFBE"
+        android:text="1" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/klkl"
+    android:layout_toEndOf="@+id/imageView"
+    android:layout_toRightOf="@+id/imageView"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="8dp"
+android:id="@+id/dur"
+    android:layout_marginStart="8dp"
+    android:layout_height="wrap_content">
+    <com.takemysaree.fonts.LatoRegularTextview
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+
+        android:textColor="#262626"
+        android:textSize="14sp"
+        android:text="Duration: " />
+
+    <com.takemysaree.fonts.LatoRegularTextview
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:id="@+id/durvalue"
+
+        android:textColor="#151515"
+        android:text="$45" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+android:id="@+id/rentsec"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content">
+        <com.takemysaree.fonts.LatoRegularTextview
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+
+            android:textColor="#262626"
+            android:textSize="14sp"
+            android:text="Rent Security: " />
+
+        <com.takemysaree.fonts.LatoRegularTextview
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+android:id="@+id/secvalue"
+            android:textColor="#151515"
+            android:text="$45" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ll"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content">
+        <com.takemysaree.fonts.LatoRegularTextview
+            android:id="@+id/tvLPaymentMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+
+            android:textColor="#262626"
+            android:textSize="14sp"
+            android:text="Price: " />
+
+        <com.takemysaree.fonts.LatoRegularTextview
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOnline"
+
+            android:textColor="#151515"
+            android:text="$45" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>

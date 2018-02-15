@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="@color/colorAccent"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivHamburger"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            android:src="@drawable/back_arrow" />
+
+        <com.takemysaree.fonts.LatoBoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_centerInParent="true"
+            android:text="Address"
+            android:textColor="@color/whitecolor"
+            android:textSize="18sp"
+
+            />
+
+
+    </RelativeLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbars"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/postprdct"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+
+                    android:background="#fff">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:gravity="left|center"
+                        android:orientation="horizontal">
+
+
+                        <com.takemysaree.fonts.LatoBoldTextview
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#fff"
+                            android:text="Country"
+                            android:textColor="@color/solid_black"
+
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_rectangleborder">
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+
+                    <com.takemysaree.fonts.LatoBoldTextview
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#fff"
+                        android:text="State"
+                        android:textColor="@color/solid_black"
+
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_rectangleborder">
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+
+                    <com.takemysaree.fonts.LatoBoldTextview
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#fff"
+                        android:text="City"
+                        android:textColor="@color/solid_black"
+
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                    <com.takemysaree.fonts.LatoNormalEditText
+
+
+                        android:background="@drawable/round_rectangleborder"
+                        android:layout_width="match_parent"
+android:layout_margin="5dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBaseline="@+id/tvLName"
+                        android:layout_alignBottom="@+id/tvLName"
+                        android:layout_alignLeft="@+id/etUserName"
+                        android:layout_alignStart="@+id/etUserName"
+                        android:layout_toEndOf="@+id/tvLName"
+                        android:layout_toRightOf="@+id/tvLName"
+                        android:hint="City"
+                        android:id="@+id/city"
+                        android:inputType="textPersonName"
+                        android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+
+                    <com.takemysaree.fonts.LatoBoldTextview
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#fff"
+                        android:text="Zip Code"
+                        android:textColor="@color/solid_black"
+
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <com.takemysaree.fonts.LatoNormalEditText
+
+
+                    android:background="@drawable/round_rectangleborder"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@+id/tvLName"
+                    android:layout_alignBottom="@+id/tvLName"
+                    android:layout_alignLeft="@+id/etUserName"
+                    android:layout_alignStart="@+id/etUserName"
+                    android:layout_toEndOf="@+id/tvLName"
+                    android:layout_toRightOf="@+id/tvLName"
+                    android:hint="Zip code"
+                    android:id="@+id/zipcode"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+
+                    <com.takemysaree.fonts.LatoBoldTextview
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#fff"
+                        android:text="Address"
+                        android:textColor="@color/solid_black"
+
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <com.takemysaree.fonts.LatoNormalEditText
+
+
+                    android:background="@drawable/round_rectangleborder"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/address"
+                    android:layout_alignBaseline="@+id/tvLName"
+                    android:layout_alignBottom="@+id/tvLName"
+                    android:layout_alignLeft="@+id/etUserName"
+                    android:layout_alignStart="@+id/etUserName"
+                    android:layout_toEndOf="@+id/tvLName"
+                    android:layout_toRightOf="@+id/tvLName"
+                    android:hint="Address"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+
+                    <com.takemysaree.fonts.LatoBoldTextview
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#fff"
+                        android:text="Name"
+                        android:textColor="@color/solid_black"
+
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <com.takemysaree.fonts.LatoNormalEditText
+
+                    android:background="@drawable/round_rectangleborder"
+                    android:layout_width="match_parent"
+android:id="@+id/name"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@+id/tvLName"
+                    android:layout_alignBottom="@+id/tvLName"
+                    android:layout_alignLeft="@+id/etUserName"
+                    android:layout_alignStart="@+id/etUserName"
+                    android:layout_toEndOf="@+id/tvLName"
+                    android:layout_toRightOf="@+id/tvLName"
+                    android:hint="Name"
+                    android:layout_margin="5dp"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+
+                    <com.takemysaree.fonts.LatoBoldTextview
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#fff"
+                        android:text="Email Id"
+                        android:textColor="@color/solid_black"
+
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <com.takemysaree.fonts.LatoNormalEditText
+
+
+                    android:background="@drawable/round_rectangleborder"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@+id/tvLName"
+                    android:layout_alignBottom="@+id/tvLName"
+                    android:layout_alignLeft="@+id/etUserName"
+                    android:layout_alignStart="@+id/etUserName"
+                    android:layout_toEndOf="@+id/tvLName"
+                    android:layout_toRightOf="@+id/tvLName"
+                    android:hint="Email id"
+                    android:id="@+id/emailid"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+
+                    <com.takemysaree.fonts.LatoBoldTextview
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#fff"
+                        android:text="Phone no."
+                        android:textColor="@color/solid_black"
+
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <com.takemysaree.fonts.LatoNormalEditText
+
+
+                    android:background="@drawable/round_rectangleborder"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/phoneno"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@+id/tvLName"
+                    android:layout_alignBottom="@+id/tvLName"
+                    android:layout_alignLeft="@+id/etUserName"
+                    android:layout_alignStart="@+id/etUserName"
+                    android:layout_toEndOf="@+id/tvLName"
+                    android:layout_toRightOf="@+id/tvLName"
+                    android:hint="Phone no"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/postprdct"
+    android:layout_alignParentBottom="true"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal">
+    <com.takemysaree.fonts.LatoBoldTextview
+        android:id="@+id/previous"
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="Add Address"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"
+
+        />
+
+    <com.takemysaree.fonts.LatoBoldTextview
+        android:id="@+id/post"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="POST"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"
+
+        />
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:layout_marginLeft="@dimen/activity_horizontal_margin"
+android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:elevation="40dp"
+    android:focusableInTouchMode="true">
+
+
+    <ImageView
+        android:id="@+id/imageclose"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:src="@drawable/close_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageclose"
+        android:background="@drawable/round_rectangleborder"
+        android:orientation="vertical"
+        tools:context="com.think360.tms.DetailActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <com.takemysaree.fonts.LatoBoldTextview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rentitem"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:text="Rent item"
+                android:textColor="@color/colorActionBar" />
+            <com.takemysaree.fonts.LatoBoldTextview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:id="@+id/rentprice"
+                android:layout_gravity="center"
+                android:gravity="right|center"
+
+                android:textColor="@color/colorActionBar" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorActionBar"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <com.takemysaree.fonts.LatoRegularTextview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:text="Select Rent Date"
+                android:textColor="@color/colorActionBar" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorActionBar"
+            android:layout_height="1dp"></View>
+        <com.takemysaree.fonts.LatoRegularTextview
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:text="Rent From"
+            android:textColor="@color/colorActionBar" />
+        <com.takemysaree.fonts.LatoRegularTextview
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/round_rectangleborder"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:id="@+id/slectfromdate"
+            android:text="Select Date"
+            android:textColor="@color/colorActionBar" />
+        <com.takemysaree.fonts.LatoRegularTextview
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:text="Rent To"
+            android:textColor="@color/colorActionBar" />
+        <com.takemysaree.fonts.LatoRegularTextview
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/round_rectangleborder"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:id="@+id/selecttodate"
+            android:textSize="16sp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:text="Select Date"
+            android:textColor="@color/colorActionBar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <com.takemysaree.fonts.LatoBoldTextview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:text="Total Price"
+                android:textColor="@color/colorActionBar" />
+            <com.takemysaree.fonts.LatoBoldTextview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="right|center"
+                android:id="@+id/totalprice"
+                android:textColor="@color/colorActionBar" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorActionBar"
+            android:layout_height="1dp"></View>
+        <com.takemysaree.fonts.LatoRegularTextview
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+         android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/round_rectangle"
+android:id="@+id/bookforrent"
+
+            android:textSize="16sp"
+
+            android:layout_gravity="right"
+            android:gravity="right|center"
+            android:text="Book"
+            android:textColor="@color/whitecolor" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_marginTop="12dp"
+            android:id="@+id/ivProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/sari1"
+            app:civ_border_color="#68F5EC"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="0"
+            app:civ_shadow_color="#CAFFFF"
+            android:layout_gravity="left|start|top" />
+
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:textColor="#686868"
+            android:textSize="10sp"
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/ivProfile"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:text="Christy Clark"  />
+
+        <TextView
+            android:textColor="#818181"
+            android:id="@+id/tvMsg"
+            android:layout_below="@+id/tvName"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/ivProfile"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi i go your collection..." />
+        <TextView
+            android:textColor="#C6C6C6"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/tvMsg"
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivProfile"
+            android:layout_toRightOf="@+id/ivProfile"
+
+            android:textSize="8sp" />
+
+        <View
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/ivProfile"
+            android:background="#E4E4E4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/view" />
+
+
+
+    </RelativeLayout>
